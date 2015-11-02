@@ -12,6 +12,7 @@ var clientFactory = require('../index');
 describe('index client factory', function() {
   withData([
     ['autoScaling', 'AutoScaling'],
+    ['cloudFormation', 'CloudFormation'],
     ['cloudWatch', 'CloudWatch'],
     ['dynamoDb', 'DynamoDB'],
     ['ec2', 'EC2'],
@@ -20,9 +21,11 @@ describe('index client factory', function() {
     ['elb', 'ELB'],
     ['iam', 'IAM'],
     ['kinesis', 'Kinesis'],
+    ['lambda', 'Lambda'],
     ['metadataService', 'MetadataService'],
     ['s3', 'S3'],
     ['ses', 'SES'],
+    ['sns', 'SNS'],
     ['sqs', 'SQS']
   ], function(factoryMethod) {
     it(factoryMethod + ' is a function', function() {
